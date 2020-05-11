@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/dbce14b60c.js" crossorigin="anonymous"></script>
+  <title>Chat</title>
+</head>
+<header class="container header">
+  <!--INICIO LOGO-->
+  <div id="logo_area">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 col-md-6">
+        <img id="logo" src="img/logo.png" />
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <img id="logo2homecare" src="img/logo2.png" />
+      </div>
+      <div class="col-lg-6 col-sm-12 col-md-3">
+        <a href="home.html" type="button" class="btn" style="color: #b7e9f0;">
+          Log Out
+        </a>
+        <a href="perfil.html" type="button" class="btn" style="color: #b7e9f0;">
+          Rejane Gontijo Lopes
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--FIM LOGO-->
+  <!--INICIO MENU-->
+  <div id="menu_area">
+    <div class="row">
+        <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link" href="menu.html" style="color: black;">M E N U</a>
+          </li>
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link" href="perfil.html" style="color: black;"
+              >P E R F I L</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link" href="servicos.html" style="color: black;"
+              >S E R V I Ç O S</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link active" href="chat.html" style="color: black;">C H A T</a>
+          </li>
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link" href="historico.html" style="color: black;"
+              >H I S T O R I C O</a
+            >
+          </li>
+          <li class="nav-item col-sm-12 col-lg-2">
+            <a class="nav-link" href="favoritos.html" style="color: black;"
+              >F A V O R I T O S</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--FIM MENU-->
+
+  <body>
+    <div class="container col-12" style="padding-left: 0px;padding-right: 0px;"></div>
+
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Conversas</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar" placeholder="Pesquisar">
+                <span class="input-group-addon">
+                  <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="img/chat2.png" alt=""> </div>
+                <div class="chat_ib">
+                  <h5>Helena Arruda<span class="chat_date">Mai 05</span></h5>
+                  <p>Tudo bem! Podemos marcar a limpeza da casa para qual dia?</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="img/chat1.png" alt=""> </div>
+                <div class="chat_ib">
+                  <h5>Bruna Melo<span class="chat_date">Abr 25</span></h5>
+                  <p>O almoço que a senhora irá reaizar será para quantas pessoas?</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="img/chat3.png" alt=""> </div>
+                <div class="chat_ib">
+                  <h5>Pedro Paiva<span class="chat_date">Abr 25</span></h5>
+                  <p>Teve mais algum problema com o encamento?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="img/chat2.png" alt="">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Tenho experiência com casas de clientes que possuem cães.</p>
+                  <span class="time_date"> 11:01 AM | June 9</span>
+                </div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Ótimo! Gostei muito das suas avaliações aqui nesse site. Excelentes relatos dos seus antigos clientes.</p>
+                <span class="time_date"> 11:01 AM | June 9</span>
+              </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="img/chat2.png" alt="">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Muito obrigada. Conforme me falou acredito que não terei problema em me deslocar até a sua residência.</p>
+                  <span class="time_date"> 11:01 AM | Yesterday</span>
+                </div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Não se preocupe com o deslocamento. Posso pedir alguém para te buscar.</p>
+                <span class="time_date"> 11:01 AM | Today</span>
+              </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="img/chat2.png" alt="">
+              </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Tudo bem! Podemos marcar a limpeza da casa para qual dia?</p>
+                  <span class="time_date"> 11:01 AM | Today</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Digite sua mensagem.." />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </body>
+
+</html>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

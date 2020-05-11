@@ -1,0 +1,236 @@
+
+/*INICIO Menu*/
+#logo{
+  max-width: 120px;
+  float: left;
+  padding: 30px;
+}
+.logo_area, .btn{
+  float: right;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  width: 200px;
+}
+
+#logo2homecare{
+max-width: 200px;
+margin-top: 50px;
+float: left;
+margin-left: -150px;
+}
+.nav-item{
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+#menu_area{
+margin-bottom: 80px;
+}
+/*FIM Menu*/
+
+/*INICIO body*/
+/*INICIO Side Perfil*/
+#fotoperfil{
+    max-width: 250px;
+    padding-top: 40px;
+    padding-left: 70px;
+    align-items: center;
+}
+#editar_perfil{
+   margin-left: 100px;
+    width: 50%;
+    margin-bottom: 30px;
+    margin-right: 80px;
+}
+#nome_usuario{
+    font-size: x-large;
+}
+
+.info_side_perfil_area> p{
+    padding-bottom: 40px;
+    
+}
+#ocupacao_usuario{
+    color: rgb(145, 145, 145);
+}
+.info_side_perfil_area{
+    text-align: center;
+}
+.side_perfil_area{
+    background-color: #e2f8fa;
+}
+/*FIM Side Perfil*/
+/*INICIO Sobre*/
+h1{
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;
+}
+
+.sobre_perfil{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 225;
+    margin-left: 20px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+.sobre{
+  padding: 50px;
+}
+.estrelas{
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+.blockquote{
+  padding: 50px
+}
+button #label_perfil_usuario{
+  padding-bottom: 30px;
+}
+/*FIM Sobre*/
+/*FIM body*/
+
+
+/*INICIO FOOTER*/
+.footer{
+  margin-top: 30px;
+  padding: 30px;
+  background-color: rgb(187, 227, 236);
+}
+#footer-info{
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: -5px;
+    
+}
+/*FIM FOOTER*/
+
+/*------------INICIO AJUSTE DE TAMANHO-------------*/
+
+@media screen and (max-width:600px ){
+  /*INICIO menu/logo*/
+  #logo{
+      float: none;
+      margin-left: 60px;
+      min-width: 200px;
+
+  }
+  #logo2homecare{
+      margin-left: 60px;
+      margin-top: 0px;
+  }
+  .logo_area, .btn{
+      float: none;
+      margin-left: 60px;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      margin-right: 0px;
+      max-width: 200px;
+  }
+  /*FIM menu/logo*/
+  /*INICIO PerfilSide*/
+  #editar_perfil{
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: white;
+    color: #488a84;
+  }
+  .info_side_perfil_area> p{
+    padding-bottom: 0px;
+    
+}
+  /*FIM PerfilSide*/
+  /*INICIO footer*/
+  #footer-info{
+    font-size: xx-small;
+    float: right;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+/*FIM footer*/
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px){
+  /*INICIO menu/logo*/
+  #logo{
+      float: none;
+      margin-left: 225px;
+      min-width: 200px;
+
+  }
+  #logo2homecare{
+      margin-left: 222px;
+      margin-top: 0px;
+  }
+  .logo_area, .btn{
+      margin-left: 170px;
+      margin-bottom: 10px;
+      margin-top: 2px;
+      margin-right: -280px;
+      max-width: 200px;
+  }
+  /*FIM menu/logo*/
+  /*INICIO PerfilSide*/
+  .info_side_perfil_area> p{
+    padding-bottom: 0px;
+}
+#fotoperfil{
+  max-width: 200px;
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-left: 200px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#editar_perfil{
+  margin-right: 0px;
+  width: 20%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: white;
+  color: #488a84;
+}
+  /*FIM PerfilSide*/
+}
+
+@media screen and (min-width: 980px) and (max-width: 1024px){
+  /*INICIO menu/logo*/
+  #logo2homecare{
+      margin-left: -100px;
+      margin-top: 50px;
+  }
+  .nav-item{
+      font-size: x-small;
+   }
+  /*FIM menu/logo*/
+  /*INICIO PerfilSide*/
+  #fotoperfil{
+    max-width: 250px;
+    padding-top: 40px;
+    padding-left: 10px;
+    align-items: center;
+}
+  #editar_perfil{
+    margin-left: 100px;
+     width: 50%;
+     margin-bottom: 30px;
+     margin-right: 60px;
+ }
+ /*FIM PerfilSide*/
+
+}
+
+/*------------FIM AJUSTE DE TAMANHO-------------*/
+
+
+
+
+
+
+
+
