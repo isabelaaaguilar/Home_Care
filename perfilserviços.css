@@ -1,0 +1,146 @@
+/* INICIO Menu*/
+#logo{
+  max-width: 120px;
+  float: left;
+  padding: 30px;
+}
+.logo_area, .btn{
+  float: right;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  width: 200px;
+}
+
+#logo2homecare{
+max-width: 200px;
+margin-top: 50px;
+float: left;
+margin-left: -150px;
+}
+.nav-item{
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+#menu_area{
+margin-bottom: 80px;
+}
+.sobre_perfil{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 225;
+    margin-left: 0px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.sobre{
+  padding: 50px;
+}
+/* FIM Menu*/
+.rounded{
+  max-width: 200px;
+}
+
+
+/*INICIO Side Perfil*/
+#fotoperfil{
+  max-width: 250px;
+  padding-top: 40px;
+  padding-left: 70px;
+  align-items: center;
+}
+#editar_perfil{
+  margin-left: 100px;
+   width: 50%;
+   margin-bottom: 30px;
+   margin-right: 80px;
+}
+#nome_usuario{
+  font-size: x-large;
+}
+
+.info_side_perfil_area> p{
+  padding-bottom: 40px;
+  
+}
+#ocupacao_usuario{
+  color: rgb(145, 145, 145);
+}
+.info_side_perfil_area{
+  text-align: center;
+}
+.side_perfil_area{
+  background-color: #e2f8fa;
+}
+
+h1{
+background-color: rgb(240, 240, 240);
+padding-top: 100px;
+}
+
+
+/*INICIO Side Perfil*/
+
+
+.info_side_perfil_area> p{
+  padding-bottom: 40px;
+  
+}
+#ocupacao_usuario{
+  color: rgb(145, 145, 145);
+}
+.info_side_perfil_area{
+  text-align: center;
+}
+.side_perfil_area{
+  background-color: #e2f8fa;
+}
+/*FIM Side Perfil*/
+/*INICIO Sobre*/
+h1{
+background-color: rgb(240, 240, 240);
+padding-top: 100px;
+}
+
+.sobre_perfil{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 225;
+  margin-left: 20px;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+}
+.mb-0{
+padding-left: 50px;
+}
+.estrelas{
+text-align: center;
+font-size: xx-large;
+padding-bottom: 10px;
+}
+.blockquote{
+padding: 50px
+}
+button #label_perfil_usuario{
+padding-bottom: 30px;
+}
+/*FIM Sobre*/
+/*FIM body*/
+
+/*INICIO FOOTER*/
+.footer{
+  margin-top: 30px;
+  padding: 30px;
+  background-color: rgb(187, 227, 236);
+}
+#footer-info{
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: -5px;
+    
+}
+/*FIM FOOTER*/
