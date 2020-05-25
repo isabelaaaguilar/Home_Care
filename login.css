@@ -1,19 +1,14 @@
-.fundo
+
+.lateral
 {
-    position: absolute;
-    width: 380px;
-    height: 700px;
-    left: 0px;
-    top: 0px;
-    background: #D6F6FD;
+    background-color:#D6F6FD;
 }
 .titulo-login
 {
-    position: absolute;
-    width: 626px;
+    margin: auto;
+    width: 100%;
     height: 57px;
-    left: 452px;
-    top: 89px;
+    padding-bottom: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -21,13 +16,15 @@
     line-height: 57px;
     color: #000000;
 }
+body {
+
+	text-align: center;
+}
 .subtitulo-login
 {
-    position: absolute;
+    margin: auto;
     width: 326px;
     height: 43px;
-    left: 602px;
-    top: 228px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -37,57 +34,86 @@
 }
 .usuario-login
 {
-    position: absolute;
-    width: 389px;
-    height: 59px;
-    left: 570px;
-    top: 291px;
+
+    width: 50%;
+    height: 20%;
     background: #E5E5E5;
     border-radius: 50px;
     border: none;
     padding: 30px;
+    margin: 20px 25%;
 }
 .senha-login
 {
-    position: absolute;
-    width: 389px;
-    height: 64px;
-    left: 570px;
-    top: 391px;
+
+    width:50%;
+    height: 20%;
     border-radius: 50px;
     background: #E5E5E5;
     border: none;
     padding: 30px;
+    margin: 20px 25%;
 }
 
 .botao-login
 {
-    position: absolute;
-    width: 93px;
+    width: 50%;
     height: 64px;
-    left: 718px;
-    top: 495px;
     border: none;
     border-radius: 50px;
+    margin: auto;
 }
 .saudacao
 {
-    position: absolute;
-    width: 186px;
-    height: 43px;
-    left: 97px;
-    top: 423px;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 43px;
+    padding-bottom: 100%;
 }
 .img-login
 {
-    position: absolute;
-    width: 299px;
-    height: 279px;
-    left: 39.82px;
-    top: 71.2px;
+    display: flex;
+    margin: auto;
+    padding-top: 50%;
+}
+@media screen and (max-width:992px ){
+.lateral
+{
+    padding: 0;
+}
+.img-login
+{
+    padding-top: 0;
+    width: 15%;
+}
+.saudacao
+{
+    padding: 0;
+    font-size: 26px;
+}
+.titulo-login
+{
+    font-size: 38px;
+    text-align: center;
+    margin: auto;
+}
+}
+@media screen and (max-width:700px ){
+  
+    .subtitulo-login
+    {
+        padding: 0;
+        font-size: 26px;
+        text-align: center;
+    }
+    .titulo-login
+    {
+        font-size: 26px;
+        margin: auto;
+        text-align: center;
+    }
+    
 }

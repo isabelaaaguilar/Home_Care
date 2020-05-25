@@ -15,23 +15,26 @@
 </head>
 
 <body>
-  <div class="pagina col-12">
-    <div class="fundo col-4">
-      <img src="img/1.png" class="img-login">
-      <p class="saudacao">Bem vindo!</p>
-    </div>
-    <div class="info col-8">
-      <h1 class="titulo-login">Faça seu login em nosso site</h1>
-      <p class="subtitulo-login">Entre em sua conta</p>
-      <form action="menu.html">
-        <input class="usuario-login" type="text" placeholder="Usuário">
-        <input class="senha-login" type="password" placeholder="Senha">
-        <button onclick="login() " type="submit" class="botao-login">Entrar</button>
-      </form>
-    </div>
-
-  </div>
-
+ <div class="pagina">
+      <div class="row">
+         <div class="col-sm-12 col-md-12 col-lg-4">
+           <div class="lateral">
+            <img src="img/1.png" class="img-login" class="col-sm-12 col-md-12 col-lg-4">
+            <p class="saudacao">Bem vindo!</p>
+           </div>
+         </div>
+         <div class="col-sm-12 col-md-12 col-lg-8">
+          <h1 class="titulo-login" >Faça seu login em nosso site</h1>
+          <p class="subtitulo-login" >Entre em sua conta</p>
+          <form action="menu.html">
+            <input class="usuario-login" type="text" placeholder="Usuário"><br>
+            <input class="senha-login" type="password" placeholder="Senha"><br>
+            <p class="botao-login"><button onclick="login() " type="submit" class="botao-login">Entrar</button></p>
+          </form>
+         </div>
+         
+      </div>
+ </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
