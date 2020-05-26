@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="chat.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/dbce14b60c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <title>HomeCare-chat</title>
 </head>
 <header class="container header">
@@ -75,7 +76,7 @@
 
     <div class="messaging">
       <div class="inbox_msg">
-        <div class="inbox_people">
+        <div class="inbox_people" id="inbox_people">
           <div class="headind_srch">
             <div class="recent_heading">
               <h4>Conversas</h4>
@@ -93,7 +94,7 @@
               <div class="chat_people">
                 <div class="chat_img"> <img src="img/chat2.png" alt=""> </div>
                 <div class="chat_ib">
-                  <h5>Helena Arruda<span class="chat_date">Mai 05</span></h5>
+                  <h5><input type="button" class="link" onclick="mensagem_js()" value="Helena Arruda"></input><span class="chat_date">Mai 05</span></h5>
                   <p>Tudo bem! Podemos marcar a limpeza da casa para qual dia?</p>
                 </div>
               </div>
@@ -118,7 +119,8 @@
             </div>
           </div>
         </div>
-        <div class="mesgs">
+        <div class="mesgs" id="mesgs">
+        <button class="sair" onclick="sair_chat()"><i class="fas fa-times"></i></button>
           <div class="msg_history">
             <div class="incoming_msg">
               <div class="incoming_msg_img"> <img src="img/chat2.png" alt="">
