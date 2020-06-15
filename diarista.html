@@ -3,9 +3,8 @@
   <head>
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>HomeCare-diarista</title>
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>HomeCare</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="diarista.css" />
     <link
@@ -14,47 +13,30 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-
-    <script></script>
   </head>
+  <body>
 
-  <header class="container header">
+<header class="container header">
     <!--INICIO LOGO-->
     <div id="logo_area">
       <div class="row">
-        <div class="col-lg-3 col-sm-12 col-md-6">
-          <img id="logo" src="img/logo.png" />
-        </div>
-        <div class="col-lg-3 col-sm-12">
-          <img id="logo2homecare" src="img/logo2.png" />
-        </div>
-        <div class="col-lg-6 col-sm-12 col-md-3">
-          <a href="home.html" type="button" class="btn" style="color: #b7e9f0;">
-            Log Out
-          </a>
-          <a
-            href="perfil.html"
-            type="button"
-            class="btn"
-            style="color: #b7e9f0;"
-          >
-            Rejane Gontijo Lopes
-          </a>
+        <div class="col-12">
+          <div class="col-sm-12">
+            <img id="logo" src="img/logo.png" />
+          </div>
+          <div class="col-sm-12"id="menu">
+            <button type="button" class="btn" style="color: #b7e9f0;">
+              Log Out
+            </button>
+          </div>
+          <div class="col-sm-12">
+            <button type="button" class="btn" style="color: #b7e9f0;">
+              Rejane Gontijo Lopes
+            </button>
+          </div>
+          <div class="col-sm-12">
+            <img id="logo2homecare" src="img/logo2.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -64,219 +46,159 @@
       <div class="row">
         <div class="col-12">
           <ul class="nav nav-tabs">
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a class="nav-link" href="menu.html" style="color: black;"
-                >M E N U</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;"
+                >M E N U</a>
             </li>
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a class="nav-link" href="perfil.html" style="color: black;"
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;"
                 >P E R F I L</a
               >
             </li>
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a
-                class="nav-link active"
-                href="servicos.html"
-                style="color: black;"
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="color: black;"
                 >S E R V I Ç O S</a
               >
             </li>
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a class="nav-link" href="chat.html" style="color: black;"
-                >C H A T</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;"
+                >C H A T</a>
             </li>
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a class="nav-link" href="historico.html" style="color: black;"
+            <li class="nav-item">
+              <a class="nav-link " href="#" style="color: black;"
                 >H I S T O R I C O</a
               >
             </li>
-            <li class="nav-item col-sm-12 col-lg-2">
-              <a class="nav-link" href="favoritos.html" style="color: black;"
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;"
                 >F A V O R I T O S</a
               >
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </div> 
     <!--FIM MENU-->
   </header>
-  <body container body>
+
+   <h1 class="diarista mb-5">
+     DIARISTA
+   </h1>
+
+    <main class="container">
+
     <div class="row">
-      <div class="col-6">
-        <div class="diarista">
-          DIARISTA
-        </div>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title"><a type="button" href="perfilserviços.html"> Joao Manuel</a></h5>
-                <p class="card-text">
-                  42 anos <br />
-                  (31)998307645 <br />
-                  joaomanuel@gmail.com
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+        <div class="col-12 col-md-6">
+          
+            <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Joao Manuel</h5>
+                      <p class="card-text">42 anos <br> (31)998307645 <br> joaomanuel@gmail.com</p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Nome do usuario</h5>
-                <p class="card-text">
-                  Idade do usuario <br />
-                  Telefone do usuario<br />
-                  E-mail
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+              <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do usuario</h5>
+                      <p class="card-text">Idade do usuario <br> Telefone do usuario <br>  E-mail  </p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Nome do usuario</h5>
-                <p class="card-text">
-                  Idade do usuario <br />
-                  Telefone do usuario<br />
-                  E-mail
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+              <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do usuario</h5>
+                      <p class="card-text">Idade do usuario <br> Telefone do usuario <br>  E-mail </p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+           <!----> 
         </div>
-      </div>
-      <div class="col-6">
-        <div class="diarista">
-          <br />
-        </div>
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Nome do usuario</h5>
-                <p class="card-text">
-                  Idade do usuario <br />
-                  Telefone do usuario<br />
-                  E-mail
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+        <div class="col-12 col-md-6">
+            <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do usuario</h5>
+                      <p class="card-text">Idade do usuario <br> Telefone do usuario <br>  E-mail  </p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Nome do usuario</h5>
-                <p class="card-text">
-                  Idade do usuario <br />
-                  Telefone do usuario<br />
-                  E-mail
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+              <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do usuario</h5>
+                      <p class="card-text">Idade do usuario <br> Telefone do usuario <br>  E-mail  </p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="img/homem.png" class="card-img" alt="" />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h5 class="card-title">Nome do usuario</h5>
-                <p class="card-text">
-                  Idade do usuario <br />
-                  Telefone do usuario<br />
-                  E-mail
-                </p>
-                <p class="card-text">
-                  <small class="text-muted"
-                    >Ultima atualização 3 mins atrás</small
-                  >
-                </p>
+              <div class="card mb-3" >
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="homem.png" class="card-img" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Nome do usuario</h5>
+                      <p class="card-text">Idade do usuario <br> Telefone do usuario <br>  E-mail  </p>
+                      <p class="card-text"><small class="text-muted">Ultima atualização 3 mins atrás</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
-        <!---->
-      </div>
     </div>
-  </body>
+  </main>
 
-  <!--INICIO Footer-->
-  <footer class="container footer">
-    <div class="row">
-      <div class="col-4">
-        <p id="footer-info">
-          Fale com a gente!
-        </p>
-        <p id="footer-info">
-          (31)99467-2674
-        </p>
-      </div>
-      <div class="col-4">
-        <p id="footer-info">
-          All Copyrights reserved 2020 HomeCare
-        </p>
-      </div>
-      <div class="col-4">
-        <p id="footer-info">
-          HomeCare@gmail.com
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!--FIM Footer-->
-</html>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"
+></script>
+
+</body>
