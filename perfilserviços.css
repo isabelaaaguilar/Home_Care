@@ -117,11 +117,15 @@ h1 {
 .blockquote {
   padding: 50px;
 }
-blockquote.mb-0{
+p,blockquote.mb-0{
   margin-left:30px;
 }
 button #label_perfil_usuario {
   padding-bottom: 30px;
+}
+div.info
+{
+ margin-left:30px;
 }
 
 /*INICIO Side Perfil*/
