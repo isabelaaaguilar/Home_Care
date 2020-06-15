@@ -117,8 +117,8 @@ h1 {
 .blockquote {
   padding: 50px;
 }
-p,.mb-0{
-  margin:30px;
+blockquote.mb-0{
+  margin-left:30px;
 }
 button #label_perfil_usuario {
   padding-bottom: 30px;
