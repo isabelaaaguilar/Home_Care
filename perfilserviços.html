@@ -33,68 +33,63 @@
     <script></script>
   </head>
   <header class="container header">
-    <!--INICIO LOGO-->
-    <div id="logo_area">
+      <!--INICIO LOGO-->
+      <div id="logo_area">
       <div class="row">
-        <div class="col-12">
-          <div class="col-sm-12">
-            <img id="logo" src="img/logo.png"/>
-          </div>
-          <div class="col-sm-12">
-            <button type="button" class="btn" style="color: #b7e9f0;">
-              Log Out
-            </button>
-          </div>
-          <div class="col-sm-12">
-            <button type="button" class="btn" style="color: #b7e9f0;">
-              Rejane Gontijo Lopes
-            </button>
-          </div>
-          <div class="col-sm-12">
-            <img id="logo2homecare" src="img/logo2.png">
-          </div>
-    
-        </div>
+      <div class="col-lg-3 col-sm-12 col-md-6">
+      <img id="logo" src="img/logo.png" />
       </div>
-    </div>
-    <!--FIM LOGO-->
- <!--INICIO MENU-->
-  <div id="menu_area">
-    <div class="row">
-        <div class="col-12">
-        <ul class="nav nav-tabs">
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link" href="menu.html" style="color: black;">M E N U</a>
-          </li>
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link active" href="perfil.html" style="color: black;"
-              >P E R F I L</a
-            >
-          </li>
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link" href="servicos.html" style="color: black;"
-              >S E R V I Ç O S</a
-            >
-          </li>
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link " href="chat.html" style="color: black;">C H A T</a>
-          </li>
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link" href="historico.html" style="color: black;"
-              >H I S T O R I C O</a
-            >
-          </li>
-          <li class="nav-item col-sm-12 col-lg-2">
-            <a class="nav-link" href="favoritos.html" style="color: black;"
-              >F A V O R I T O S</a
-            >
-          </li>
-        </ul>
+      <div class="col-lg-3 col-sm-12">
+      <img id="logo2homecare" src="img/logo2.png" />
       </div>
-    </div>
-  </div>
-  <!--FIM MENU-->
-    
+      <div class="col-lg-6 col-sm-12 col-md-3">
+      <a href="home.html" type="button" class="btn" style="color: #b7e9f0;">
+      Log Out
+      </a>
+      <a href="perfil.html" type="button" class="btn" style="color: #b7e9f0;">
+      Rejane Gontijo Lopes
+      </a>
+      </div>
+      </div>
+      </div>
+      <!--FIM LOGO-->
+      <!--INICIO MENU-->
+      <div id="menu_area">
+      <div class="row">
+      <div class="col-12">
+      <ul class="nav nav-tabs">
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link" href="menu.html" style="color: black;">M E N U</a>
+      </li>
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link" href="perfil.html" style="color: black;"
+      >P E R F I L</a
+      >
+      </li>
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link active" href="servicos.html" style="color: black;"
+      >S E R V I Ç O S</a
+      >
+      </li>
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link" href="chat.html" style="color: black;">C H A T</a>
+      </li>
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link" href="historico.html" style="color: black;"
+      >H I S T O R I C O</a
+      >
+      </li>
+      <li class="nav-item col-sm-12 col-lg-2">
+      <a class="nav-link" href="favoritos.html" style="color: black;"
+      >F A V O R I T O S</a
+      >
+      </li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <!--FIM MENU-->
+      </header>
   </header>
 
   <body class="container body">
@@ -104,14 +99,10 @@
         <div class="col-lg-4">
           <div class="side_perfil_area">
             <div class="col-12">
-            <img class="rounded" id="fotoperfil" src= "foto de perfil joao manuel.jpg">
+            <img class="rounded" id="fotoperfil" src= "img/foto de perfil joao manuel.jpg">
                 
               </div>
-              <div class="">
-                <button type="button" id="editar_perfil" class="btn btn-info">
-                Editar Perfil
-              </button>
-              </div>
+
               <div class="info_side_perfil_area">
         
                   <p id="nome_usuario"><br>Joao Manuel</p>
@@ -134,14 +125,19 @@
                     Email: JoaoManuel@rellus.com.br
                   </p>
                   <p>
-                    <button type="button" id="label_perfil_usuario" class="btn" style="margin-right: 50px;">
+                    <a id="label_perfil_usuario" class="tel">
                       Telefone: (31)98367-9856
-                    </button>
+                    </a>
                   </p>
                   <p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="margin-right: 70px;">
                       Avaliar este perfil
                     </button>
+                    <a href="chat.html">
+                      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" style="margin-right: 70px;">
+                        Chamar no chat
+                      </button>
+                      </a>
                   </p>
                   <!--MODAL PARA AVALIAÇÕES-->
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -155,7 +151,7 @@
                         </div>
                         <div class="modal-body">
                           <div class="estrelas">
-                            <span id="star-count">0</span>
+                            <p id="star-count" >0</p>
                             <svg class="bi bi-star-fill star" width="60px" viewBox="0 0 16 16" fill="grey" xmlns="http://www.w3.org/2000/svg">
                               <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
@@ -188,8 +184,8 @@
             <h2 class="sobre_perfil">Sobre mim</h2>
             <p class="sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quaerat dolorum pariatur aperiam error reiciendis ipsa minima. Cumque adipisci asperiores ratione, fuga reprehenderit modi error, vitae quasi suscipit provident quo! ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore hic omnis officiis praesentium cum voluptatum? Qui nisi, omnis illo ipsa unde perferendis asperiores doloribus provident dolores vero ratione? Ad?</p>
             <p>
-            <div class="estrelas"  style="display: flex;justify-content: center;">
-              <span id="ranking-visualization"  style="margin: 10px;" >0</span>
+            <div class="estrelas">
+              <p id="ranking-visualization">0</p>
               <svg class="bi bi-star-fill star-visualization" width="60px" viewBox="0 0 16 16" fill="grey" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
               </svg>
