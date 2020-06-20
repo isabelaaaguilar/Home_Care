@@ -123,6 +123,7 @@
     padding: 5px 10px 5px 12px;
     width: 100%;
   }
+
   .time_date {
     color: #747474;
     display: block;
@@ -148,6 +149,8 @@
   .sent_msg {
     float: right;
     width: 46%;
+    display: flex;
+    flex-wrap: wrap;
   }
   .input_msg_write input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -159,23 +162,18 @@
   }
   
   .type_msg {border-top: 1px solid #c4c4c4;position: relative;}
-  .msg_send_btn {
-    background: #4cbedd none repeat scroll 0 0;
+  #msg_send_btn {
+    background: #4cbedd;
     border: medium none;
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
-    font-size: 17px;
-    height: 33px;
-    position: absolute;
-    right: 0;
-    top: 11px;
-    width: 33px;
+    width: 8%;
   }
   .messaging { padding: 0 0 50px 0;}
   .msg_history {
     height: 516px;
-    overflow-y: auto;
+    overflow: auto;
   }
   .link {
     background-color: transparent;
@@ -192,6 +190,7 @@
     border: 0;
     padding-left: 80%;
   }
+  
   /*------------INICIO AJUSTE DE TAMANHO-------------*/
   @media screen and (max-width:900px ){
       .mesgs

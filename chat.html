@@ -95,7 +95,7 @@
                 <div class="chat_img"> <img src="img/chat2.png" alt=""> </div>
                 <div class="chat_ib">
                   <h5><input type="button" class="link" onclick="mensagem_js()" value="Helena Arruda"></input><span class="chat_date">Mai 05</span></h5>
-                  <p>Tudo bem! Podemos marcar a limpeza da casa para qual dia?</p>
+                  <p class="recent">Tudo bem! Podemos marcar a limpeza da casa para qual dia?</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
             </div>
             <div class="outgoing_msg">
               <div class="sent_msg">
-                <p>Ótimo! Gostei muito das suas avaliações aqui nesse site. Excelentes relatos dos seus antigos clientes.</p>
+                <p class="sent">Ótimo! Gostei muito das suas avaliações aqui nesse site. Excelentes relatos dos seus antigos clientes.</p>
                 <span class="time_date"> 11:01 AM | June 9</span>
               </div>
             </div>
@@ -150,7 +150,7 @@
             </div>
             <div class="outgoing_msg">
               <div class="sent_msg">
-                <p>Não se preocupe com o deslocamento. Posso pedir alguém para te buscar.</p>
+                <p class="sent">Não se preocupe com o deslocamento. Posso pedir alguém para te buscar.</p>
                 <span class="time_date"> 11:01 AM | Today</span>
               </div>
             </div>
@@ -165,10 +165,11 @@
               </div>
             </div>
           </div>
-          <div class="type_msg">
-            <div class="input_msg_write">
-              <input type="text" class="write_msg" placeholder="Digite sua mensagem.." />
-              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+          <div class="message-input">
+            <div class="wrap">
+            <input type="text" placeholder="Digite sua mensagem..." style="width: 85%;"/>
+            <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+            <button class="submit" id="msg_send_btn" onclick="newMessage()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
