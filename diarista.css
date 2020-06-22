@@ -41,3 +41,82 @@ margin-bottom: 80px;
 .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);box-shadow: rgb(131, 131, 131);
 }
+ /*------------INICIO AJUSTE DE TAMANHO-------------*/
+  @media screen and (max-width:900px ){
+      .mesgs
+      {
+        visibility: hidden;   
+      }
+      .inbox_people
+      {
+        width: 100%;
+      }
+  }
+  @media screen and (max-width:600px ){
+    /*INICIO menu/logo*/
+    #logo{
+        float: none;
+        margin-left: 60px;
+        min-width: 200px;
+  
+    }
+    #logo2homecare{
+        margin-left: 60px;
+        margin-top: 0px;
+    }
+    .logo_area, .btn{
+        float: none;
+        margin-left: 60px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+        max-width: 200px;
+    }
+    /*FIM menu/logo*/
+    /*INICIO footer*/
+    #footer-info{
+      font-size: xx-small;
+      float: right;
+      margin-left: 0px;
+      margin-bottom: 5px;
+  }
+  /*FIM footer*/
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 980px){
+    /*INICIO menu/logo*/
+    #logo{
+        float: none;
+        margin-left: 225px;
+        min-width: 200px;
+  
+    }
+    #logo2homecare{
+        margin-left: 222px;
+        margin-top: 0px;
+    }
+    .logo_area, .btn{
+        margin-left: 170px;
+        margin-bottom: 10px;
+        margin-top: 2px;
+        margin-right: -280px;
+        max-width: 200px;
+    }
+    /*FIM menu/logo*/
+  }
+  
+  @media screen and (min-width: 980px) and (max-width: 1024px){
+    /*INICIO menu/logo*/
+    #logo2homecare{
+        margin-left: -100px;
+        margin-top: 50px;
+    }
+    .nav-item{
+        font-size: x-small;
+     }
+    /*FIM menu/logo*/
+  
+  }
+  
+  /*------------FIM AJUSTE DE TAMANHO-------------*/
+  
