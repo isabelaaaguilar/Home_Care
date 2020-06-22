@@ -1,119 +1,37 @@
-
-.lateral
-{
-    background-color:#D6F6FD;
-}
-.titulo-login
-{
-    margin: auto;
-    width: 100%;
-    height: 57px;
-    padding-bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 57px;
-    color: #000000;
-}
-body {
-
-	text-align: center;
-}
-.subtitulo-login
-{
-    margin: auto;
-    width: 326px;
-    height: 43px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;
-    color: #444444;
-}
-.usuario-login
-{
-
-    width: 50%;
-    height: 20%;
-    background: #E5E5E5;
-    border-radius: 50px;
-    border: none;
-    padding: 30px;
-    margin: 20px 25%;
-}
-.senha-login
-{
-
-    width:50%;
-    height: 20%;
-    border-radius: 50px;
-    background: #E5E5E5;
-    border: none;
-    padding: 30px;
-    margin: 20px 25%;
+.text-center{
+    margin-top: 40px;
 }
 
-.botao-login
-{
-    width: 50%;
-    height: 64px;
-    border: none;
-    border-radius: 50px;
-    margin: auto;
+#login{
+    margin-top: 50px;
 }
-.saudacao
-{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;
-    padding-bottom: 100%;
+
+#cima{    
+    height: 80px;
 }
-.img-login
-{
-    display: flex;
-    margin: auto;
-    padding-top: 50%;
+
+#cima img{
+   width: 1400px;
+   height: max-content;  
 }
-@media screen and (max-width:992px ){
-.lateral
-{
-    padding: 0;
+
+#baixo{  
+    height: 180px;
+    margin-top: 50px;
 }
-.img-login
-{
-    padding-top: 0;
-    width: 15%;
+
+#login-row{
+    background-color: rgba(128, 128, 128, 0.178);
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.saudacao
-{
-    padding: 0;
-    font-size: 26px;
+
+#frasezinha{
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.titulo-login
-{
-    font-size: 38px;
-    text-align: center;
-    margin: auto;
-}
-}
-@media screen and (max-width:700px ){
-  
-    .subtitulo-login
-    {
-        padding: 0;
-        font-size: 26px;
-        text-align: center;
-    }
-    .titulo-login
-    {
-        font-size: 26px;
-        margin: auto;
-        text-align: center;
-    }
-    
+
+h5{
+    color: rgb(150, 150, 150);
 }
