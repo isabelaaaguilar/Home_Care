@@ -43,8 +43,14 @@ margin-bottom: 80px;
 #editar_perfil{
    margin-left: 100px;
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-right: 80px;
+}
+#calendario{
+   margin-left: 70px;
+   width: 30%;
+   margin-bottom: 50px;
+   margin-right: 110px;
 }
 #nome_usuario{
     font-size: x-large;
@@ -188,6 +194,14 @@ button #label_perfil_usuario{
   margin-bottom: 10px;
 }
 #editar_perfil{
+  margin-right: 0px;
+  width: 20%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: white;
+  color: #488a84;
+}
+#calendario{
   margin-right: 0px;
   width: 20%;
   margin-bottom: 30px;
