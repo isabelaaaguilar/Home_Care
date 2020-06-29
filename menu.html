@@ -27,6 +27,42 @@
     />
 
     <link rel="stylesheet" href="menu.css" />
+    <script src="login.js"></script>
+    <script>
+      // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
+      if (!usuarioCorrente.login) {
+          window.location.href = LOGIN_URL;
+      }
+
+      function exibeUsuarios() {
+          
+          // Popula a tabela com os registros do banco de dados
+          let listaUsuarios = '';
+          for (i = 0; i < db_usuarios.usuarios.length; i++) {
+              let usuario = db_usuarios.usuarios[i];
+              listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
+          }
+
+          // Substitui as linhas do corpo da tabela
+          document.getElementById("table-usuarios").innerHTML = listaUsuarios
+
+      }
+
+      function initPage() {
+
+          // Associa a função de logout ao botão
+          document.getElementById('btn-logout').addEventListener('click', logoutUser);
+
+          // Informa o nome do usuário logado
+          document.getElementById('user-name').innerHTML = "Ola "+ usuarioCorrente.nome;
+
+          // Lista os usuários 
+          exibeUsuarios ();
+      }
+
+      // Associa ao evento de carga da página a função para verificar se o usuário está logado
+      window.addEventListener('load', initPage);
+  </script>
   </head>
 
   <header class="container header">
@@ -34,17 +70,15 @@
       <div class="col-12 header_area">
         <div class="row">
           <!-- Logout area -->
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 login_area">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-10 login_area">
             <ul class="nav justify-content-end login_area">
               <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #86e1f5;"
-                  >Criar uma conta</a
+                <a id="btn-rejane" class="nav-link" href="perfil.html" style="color: #b7e9f0;"
+                  ><p id="nomeUsuario"></p></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html" style="color: #86e1f5;"
-                  >Log In</a
-                >
+                <a id="btn-logout" class="nav-link" href="home.html" style="color: #b7e9f0;">Log Out</a>
               </li>
             </ul>
           </div>
@@ -69,36 +103,44 @@
               </div>
               <!--INICIO MENU-->
 
-              <div class="col-12">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link active" href="menu.html" style="color: black;">M E N U</a>
-                  </li>
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link" href="perfil.html" style="color: black;"
-                      >P E R F I L</a
-                    >
-                  </li>
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link" href="servicos.html" style="color: black;"
-                      >S E R V I Ç O S</a
-                    >
-                  </li>
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link" href="chat.html" style="color: black;">C H A T</a>
-                  </li>
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link" href="historico.html" style="color: black;"
-                      >H I S T O R I C O</a
-                    >
-                  </li>
-                  <li class="nav-item col-sm-12 col-lg-2">
-                    <a class="nav-link" href="favoritos.html" style="color: black;"
-                      >F A V O R I T O S</a
-                    >
-                  </li>
-                </ul>
-              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a class="nav-link active" href="menu.html" style="color: black;"
+                    >M E N U</a
+                  >
+                </li>
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a
+                    class="nav-link"
+                    href="perfil.html"
+                    style="color: black;"
+                    >P E R F I L</a
+                  >
+                </li>
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a class="nav-link" href="servicos.html" style="color: black;"
+                    >S E R V I Ç O S</a
+                  >
+                </li>
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a class="nav-link" href="chat.html" style="color: black;"
+                    >C H A T</a
+                  >
+                </li>
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a
+                    class="nav-link"
+                    href="historico.html"
+                    style="color: black;"
+                    >H I S T O R I C O</a
+                  >
+                </li>
+                <li class="nav-item col-12 col-sm-12 col-md-2 col-lg-2">
+                  <a class="nav-link" href="favoritos.html" style="color: black;"
+                    >F A V O R I T O S</a
+                  >
+                </li>
+              </ul>
 
               <!--FIM MENU-->
 
@@ -106,7 +148,7 @@
 
               <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="Bemvindo">
-                  <h1>Olá Rejane!</h1>
+                  <h1 id="user-name"></h1>
                   <h1>Seja Bem Vinda!</h1>
                   <h1 style="color: rgb(146, 145, 145);">_____</h1>
                 </div>
