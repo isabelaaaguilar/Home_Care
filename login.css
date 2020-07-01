@@ -11,7 +11,7 @@
 }
 
 #cima img{
-   width: 1400px;
+   width: 1500px;
    height: max-content;  
 }
 
@@ -35,7 +35,13 @@
 h5{
     color: rgb(150, 150, 150);
 }
-.btn-info
-{
-    margin-left: 20px;
+
+#btnVoltar:hover{
+    color: rgb(104, 104, 104);
 }
+
+#btnVoltar{
+    margin-left: 120px;
+    margin-top: -90px;
+}
+

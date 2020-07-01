@@ -37,8 +37,8 @@ function generateUUID() { // Public Domain/MIT
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com", "idade": "40", "sexo": "feminino", "ocupacao": "admin", "endereco": "rua x", "telefone": "12345", "descricao": "admin"},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com", "idade": "40", "sexo": "feminino", "ocupacao": "usuario comum", "endereco": "rua y", "telefone": "12345", "descricao": "apenas um usuario comum"},
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com", "idade": "40", "sexo": "feminino", "ocupacao": "admin", "endereco": "rua x", "telefone": "12345", "descricao": "admin", "categoria": "contratante"},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com", "idade": "40", "sexo": "feminino", "ocupacao": "usuario comum", "endereco": "rua y", "telefone": "12345", "descricao": "apenas um usuario comum", "categoria": "diarista"},
     ]
 };
 
@@ -95,6 +95,7 @@ function loginUser (login, senha) {
             usuarioCorrente.endereco = usuario.endereco;
             usuarioCorrente.telefone = usuario.telefone;
             usuarioCorrente.descricao = usuario.descricao;
+            usuarioCorrente.categoria = usuario.categoria;
             
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
@@ -115,11 +116,11 @@ function logoutUser () {
     window.location = LOGIN_URL;
 }
 
-function addUser (nome, login, senha, email, idade, sexo, ocupacao, endereco, telefone, descricao) {
+function addUser (nome, login, senha, email, idade, sexo, ocupacao, endereco, telefone, descricao, categoria) {
     
     // Cria um objeto de usuario para o novo usuario 
     let newId = generateUUID ();
-    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email, "idade": idade, "sexo": sexo, "ocupacao": ocupacao, "endereco": endereco, "telefone": telefone, "descricao": descricao };
+    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email, "idade": idade, "sexo": sexo, "ocupacao": ocupacao, "endereco": endereco, "telefone": telefone, "descricao": descricao, "categoria": categoria, };
     
     // Inclui o novo usuario no banco de dados baseado em JSON
     db_usuarios.usuarios.push (usuario);

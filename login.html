@@ -15,10 +15,13 @@
         <img src="img/img-login.landscape2.png" >               
      </div>
 	<div id="login">
-        
+        <button href="home.html" type="button" class="btn" style="color: rgb(150, 150, 150);" id="btnVoltar"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+          </svg>VOLTAR</button>
 		<div class="container">
 			<div id="login-row" class="row justify-content-center align-items-center">
-				<div id="login-column" class="col-md-7">
+				<div id="login-column" class="col-md-6">
 					<div id="login-box" class="col-md-12">
 						<form id="login-form" class="form" method="post" onsubmit="loginUser(this)">
                             <h3 class="text-center text-info">Login</h3>
@@ -32,11 +35,11 @@
                                 <input type="password" name="password" id="password" class="form-control">
                             </div>
                             <div class="form-group text-right">                                
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Logar">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
                         </form>
                     </div>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">Novo usuário</button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">Novo usuario</button>
                 </div>
             </div>
         </div>
@@ -61,7 +64,7 @@
                     <h3 class="text-center text-info">Novo usuário</h3>
                     <div class="form-group">
                         <label for="login" class="text-info">Usuário</label><br>
-                        <input type="text" name="txt_login" id="txt_login" class="form-control">
+                        <input type="text" name="txt_login" id="txt_login" class="form-control" placeholder="Crie um nome de login para a sua conta">
                     </div>
                     <div class="form-group">
                         <label for="nome" class="text-info">Nome completo</label><br>
@@ -77,31 +80,85 @@
                     </div>
                     <div class="form-group">
                         <label for="sexo" class="text-info">Sexo</label><br>
-                        <input type="text" name="txt_sexo" id="txt_sexo" class="form-control">
+                        <select name="txt_sexo" id="txt_sexo" class="form-control">
+                            <option selected>Escolha...</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Outro</option>
+                            <option>Prefiro não declarar</option>
+                          </select>
                     </div>
                     <div class="form-group">
                         <label for="ocupacao" class="text-info">Ocupação</label><br>
-                        <input type="text" name="txt_ocupacao" id="txt_ocupacao" class="form-control">
+                        <input type="text" name="txt_ocupacao" id="txt_ocupacao" class="form-control" placeholder="Ex: Estudante">
                     </div>
                     <div class="form-group">
                         <label for="endereco" class="text-info">Endereço</label><br>
-                        <input type="text" name="txt_endereco" id="txt_endereco" class="form-control">
+                        <input type="text" name="txt_rua" id="txt_rua" class="form-control" placeholder="Rua"><br>
+                        <input type="text" name="txt_endereco" id="txt_endereco" class="form-control"placeholder="Bairro"><br>
+                        <input type="text" name="txt_cidade" id="txt_cidade" class="form-control"placeholder="Cidade"><br>
+                        <select name="txt_sexo" id="txt_estado" class="form-control">
+                            <option selected>Estado</option>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                          </select>
                     </div>
                     <div class="form-group">
                         <label for="telefone" class="text-info">Telefone</label><br>
-                        <input type="text" name="txt_telefone" id="txt_telefone" class="form-control">
+                        <input type="text" name="txt_telefone" id="txt_telefone" class="form-control" placeholder="Ex: 31998307545">
                     </div>
                     <div class="form-group">
                         <label for="descricao" class="text-info">Breve descrição sobre voce!</label><br>
                         <input type="text" name="txt_descricao" id="txt_descricao" class="form-control" placeholder="Ex: Sou uma pessoa muito organizada, tenho toc para limpeza...etc">
                     </div>
                     <div class="form-group">
+                        <label for="categoria" class="text-info">Categoria com a qual deseja se cadastrar</label><br>
+                        <select name="txt_categoria" id="txt_categoria" class="form-control">
+                            <option selected>Escolha...</option>
+                            <option>Contratante</option>
+                            <option>Babá</option>
+                            <option>Cozinheira</option>
+                            <option>Diarista</option>
+                            <option>Jardineiro</option>
+                            <option>Mecânico</option>
+                            <option>Passadeira de roupas</option>
+                            <option>Pintor</option>
+                            <option>Técnico</option>
+                            <option>Outro</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
                         <label for="senha" class="text-info">Senha</label><br>
-                        <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+                        <input type="password" name="txt_senha" id="txt_senha" class="form-control" placeholder="Crie uma senha">
                     </div>
                     <div class="form-group">
                         <label for="senha2" class="text-info">Confirmação de Senha</label><br>
-                        <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+                        <input type="password" name="txt_senha2" id="txt_senha2" class="form-control" placeholder="Repita a mesma senha">
                     </div>
                 </form>
             </div>
@@ -152,13 +209,14 @@
             let endereco = document.getElementById('txt_endereco').value;
             let telefone = document.getElementById('txt_telefone').value;
             let descricao = document.getElementById('txt_descricao').value;
+            let categoria = document.getElementById('txt_categoria').value;
             if (senha != senha2) {
                 alert ('As senhas informadas não conferem.');
                 return
             }
 
             // Adiciona o usuário no banco de dados
-            addUser (nome, login, senha, email, idade, sexo, ocupacao, endereco, telefone, descricao);
+            addUser (nome, login, senha, email, idade, sexo, ocupacao, endereco, telefone, descricao, categoria);
             alert ('Usuário salvo com sucesso. Proceda com o login para ');
 
             // Oculta a div modal do login
