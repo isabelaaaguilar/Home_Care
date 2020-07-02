@@ -4,19 +4,19 @@
   float: left;
   padding: 30px;
 }
-.logo_area,  .btn{
+.logo_area, .btn{
   float: right;
   margin-top: 50px;
-  margin-right: 70px;
-  margin-bottom: 40px;
-  text-shadow: black;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  width: 200px;
 }
-#menu{
-  text-shadow: black,100px;
-}
+
 #logo2homecare{
-  max-width: 200px;
-  margin-top: 50px;
+max-width: 200px;
+margin-top: 50px;
+float: left;
+margin-left: -150px;
 }
 .nav-item{
   width: 100%;
@@ -25,8 +25,9 @@
   font-size: 15px;
   text-align: center;
 }
+
 #menu_area{
-  margin-bottom: 80px;
+margin-bottom: 80px;
 }
 /* FIM Menu*/
 
@@ -34,10 +35,92 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 100;
     font-size: x-large;
-    color: skyblue;
+    color: black;
     text-align: center;   
 }
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);box-shadow: rgb(131, 131, 131);
   }
+.card-img{
+  padding: 10px;
+}
+/*------------INICIO AJUSTE DE TAMANHO-------------*/
+@media screen and (max-width:900px ){
+  .mesgs
+  {
+    visibility: hidden;   
+  }
+  .inbox_people
+  {
+    width: 100%;
+  }
+}
+@media screen and (max-width:600px ){
+/*INICIO menu/logo*/
+#logo{
+    float: none;
+    margin-left: 60px;
+    min-width: 200px;
+
+}
+#logo2homecare{
+    margin-left: 60px;
+    margin-top: 0px;
+}
+.logo_area, .btn{
+    float: none;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    max-width: 200px;
+}
+/*FIM menu/logo*/
+/*INICIO footer*/
+#footer-info{
+  font-size: xx-small;
+  float: right;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+/*FIM footer*/
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px){
+/*INICIO menu/logo*/
+#logo{
+    float: none;
+    margin-left: 225px;
+    min-width: 200px;
+
+}
+#logo2homecare{
+    margin-left: 222px;
+    margin-top: 0px;
+}
+.logo_area, .btn{
+    margin-left: 170px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-right: -280px;
+    max-width: 200px;
+}
+/*FIM menu/logo*/
+}
+
+@media screen and (min-width: 980px) and (max-width: 1024px){
+/*INICIO menu/logo*/
+#logo2homecare{
+    margin-left: -100px;
+    margin-top: 50px;
+}
+.nav-item{
+    font-size: x-small;
+ }
+/*FIM menu/logo*/
+
+}
+
+/*------------FIM AJUSTE DE TAMANHO-------------*/
+

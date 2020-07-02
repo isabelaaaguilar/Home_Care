@@ -1,58 +1,51 @@
+/* INICIO Menu*/
 #logo{
-    max-width: 120px;
-    float: left;
-    padding: 30px;
+  max-width: 120px;
+  float: left;
+  padding: 30px;
 }
 .logo_area, .btn{
-    float: right;
-    margin-top: 50px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    width: 200px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  width: 200px;
 }
 
 #logo2homecare{
-  max-width: 200px;
-  margin-top: 50px;
-  float: left;
-  margin-left: -150px;
+max-width: 200px;
+margin-top: 50px;
+float: left;
+margin-left: -150px;
 }
 .nav-item{
-    width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    text-align: center;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
 }
 
 #menu_area{
-  margin-bottom: 80px;
+margin-bottom: 80px;
 }
-.sobre_perfil{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-weight: 225;
-      margin-left: 0px;
-      background-color: rgb(245, 245, 245);
-      padding: 20px;
-      margin-bottom: 30px;
-  }
-  .sobre{
-    padding: 50px;
-  }
 /* FIM Menu*/
 .diarista{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
   font-size: x-large;
-  color: skyblue;
+  color: black;
   text-align: center;   
 }
 
 .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);box-shadow: rgb(131, 131, 131);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);box-shadow: rgb(131, 131, 131);
+  }
+.card-img{
+  padding: 10px;
 }
 
-  /*------------INICIO AJUSTE DE TAMANHO-------------*/
+ /*------------INICIO AJUSTE DE TAMANHO-------------*/
   @media screen and (max-width:900px ){
       .mesgs
       {
@@ -130,3 +123,4 @@
   }
   
   /*------------FIM AJUSTE DE TAMANHO-------------*/
+  

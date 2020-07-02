@@ -108,7 +108,17 @@ function loginUser (login, senha) {
     // Se chegou até aqui é por que não encontrou o usuário e retorna falso
     return false;
 }
-
+function preenchePerfil(){
+	let dados = sessionStorage.getItem('usuarioCorrente');
+	let json = JSON.parse(dados);
+	document.getElementById("nome_usuario").innerHTML = json['nome'];
+	document.getElementById("ocupacao_usuario").innerHTML = json['ocupacao'];
+	document.getElementById("idade").innerHTML = "Idade: " + json['idade'] + " anos";
+	document.getElementById("sexo").innerHTML = "Sexo:" + json['sexo'];
+	document.getElementById("endereco").innerHTML = json['endereco'];
+    document.getElementById("email").innerHTML = json['email'];
+    document.getElementById("categoria").innerHTML = json['categoria'];
+}
 // Apaga os dados do usuário corrente no sessionStorage
 function logoutUser () {
     usuarioCorrente = {};
