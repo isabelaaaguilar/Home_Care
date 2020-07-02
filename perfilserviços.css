@@ -55,8 +55,16 @@
 }
 #nome_usuario {
   font-size: x-large;
+    margin:0;
 }
-
+#label_perfil_usuario
+{
+    margin:0;
+}
+p
+{
+    margin:0;
+}
 .info_side_perfil_area > p {
   padding-bottom: 40px;
 }
