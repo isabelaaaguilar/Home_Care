@@ -117,7 +117,9 @@ function preenchePerfil(){
 	document.getElementById("sexo").innerHTML = "Sexo:" + json['sexo'];
 	document.getElementById("endereco").innerHTML = json['endereco'];
     document.getElementById("email").innerHTML = json['email'];
-    document.getElementById("categoria").innerHTML = json['categoria'];
+    document.getElementById("descricao").innerHTML = json['descricao'];
+    document.getElementById("telefone").innerHTML = json['telefone'];
+    //document.getElementById("categoria").innerHTML = json['categoria'];
 }
 // Apaga os dados do usuário corrente no sessionStorage
 function logoutUser () {
