@@ -69,6 +69,11 @@ margin-bottom: 80px;
 .side_perfil_area{
     background-color: #e2f8fa;
 }
+
+#calendario{
+  margin-top: 10px;
+  margin-left: 115px;
+}
 /*FIM Side Perfil*/
 /*INICIO Sobre*/
 h1{

@@ -52,13 +52,21 @@
     }
     .card{
         width: 300px;
-        margin-left: 5px;
+        margin-left: 80px;
         height: 200px;
+        margin-top: 20px;
     }
     .logomarca{
         margin-left: 0px;
         width: 250px;
     }
+    .Bemvindo{
+        margin-left: 100px;
+    }
+    #btn-logout{
+        margin-right: -100px;
+    }
+    
 }
 @media screen and (min-width: 601px) and (max-width: 980px){
     .nav-link{
@@ -66,8 +74,12 @@
     }
     .card{
         margin: 20px;
-        margin-left: 50px;
+        margin-left: 120px;
     }
+    #btn-logout{
+        margin-right: -150px;
+    }
+
 }
 @media screen and (min-width: 980px) and (max-width: 1024px){
     .nav-link{
