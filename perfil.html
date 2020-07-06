@@ -31,6 +31,8 @@
     ></script>
 
     <script src="https://kit.fontawesome.com/5e21580a51.js" crossorigin="anonymous"></script>
+
+    <script src="login.js"></script>
   </head>
 
   <header class="container header">
@@ -90,7 +92,7 @@
     
   </header>
 
-  <body class="container body">
+  <body class="container body" onload="preenchePerfil()">
     <!--INICIO PERFIL-->
     
       <div class="row">
@@ -109,18 +111,18 @@
                     Empresária e revedendora de tecidos
                   </p>
                   <p>
-                    <a id="label_perfil_usuario">Idade: 52 anos</a>
+                    <a id="idade">Idade: 52 anos</a>
                   </p>
                   <p>
-                    <a id="label_perfil_usuario">Sexo: Feminino</a>
+                    <a id="sexo">Sexo: Feminino</a>
                   </p>
-                  <p><a id="label_perfil_usuario">Endereço:</a></p>
-                  <p>
+                  <p><a>Endereço:</a></p>
+                  <p id = "endereco">
                     
                       Região Centro Sul de Belo Horizonte, Minas Gerais
                   </p>
                   <p><a id="label_perfil_usuario">Contatos:</a></p>
-                  <p>
+                  <p id = "email">
                     Email: Rejane@rellus.com.br
                   </p>
                   <p>
