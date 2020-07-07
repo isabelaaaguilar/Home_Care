@@ -29,7 +29,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-
+  <script src="login.js"></script>
     <script src="https://kit.fontawesome.com/5e21580a51.js" crossorigin="anonymous"></script>
   </head>
 
@@ -90,7 +90,7 @@
     
   </header>
 
-  <body class="container body">
+  <body class="container body" onload="preenchePerfil()">
     <!--INICIO PERFIL-->
     
       <div class="row">
@@ -107,23 +107,21 @@
                     Empresária e revedendora de tecidos
                   </p>
                   <p>
-                    <a id="label_perfil_usuario">Idade: 52 anos</a>
+                    <a id="idade">Idade: 52 anos</a>
                   </p>
                   <p>
-                    <a id="label_perfil_usuario">Sexo: Feminino</a>
+                    <a id="sexo">Sexo: Feminino</a>
                   </p>
-                  <p><a id="label_perfil_usuario">Endereço:</a></p>
+                  <p><a id="endereco">Endereço:</a></p>
                   <p>
                     
                       Região Centro Sul de Belo Horizonte, Minas Gerais
                   </p>
                   <p><a id="label_perfil_usuario">Contatos:</a></p>
-                  <p>
-                    Email: Rejane@rellus.com.br
-                  </p>
+                  <p><a id="email"> Email: Rejane@rellus.com.br</a></p>
                   <p>
                     <p>
-                      Telefone: (31) 99867-9845
+                     <a id="telefone">Telefone: (31) 99867-9845</a>
                     </p>
                   </p>
               </div>
@@ -132,7 +130,7 @@
         <div class="col-lg-8">
           <div class="perfil_area">
             <h2 class="sobre_perfil">Sobre mim</h2>
-            <p class="sobre">Olá! Eu sou a Rejane Gontijo Lopes, como vocês podem ver! =) Sou uma mulher de 52 anos, muito bem casada com meu marido, Donizete, e tenho uma família linda de 1 filho de 24 anos e uma filha de 18. Prezo muito pelo bem estar de minha família e, por isso, estou aqui para contratar aqueles em que confio! Pretendo estar presente durante todo o processo. Quero deixar claro também que em minha casa possuímos 2 labradores e um papagaio, então é requisito gostar de animais para entrar lá! </p>
+            <p  id="descricao" class="sobre">Olá! Eu sou a Rejane Gontijo Lopes, como vocês podem ver! =) Sou uma mulher de 52 anos, muito bem casada com meu marido, Donizete, e tenho uma família linda de 1 filho de 24 anos e uma filha de 18. Prezo muito pelo bem estar de minha família e, por isso, estou aqui para contratar aqueles em que confio! Pretendo estar presente durante todo o processo. Quero deixar claro também que em minha casa possuímos 2 labradores e um papagaio, então é requisito gostar de animais para entrar lá! </p>
             <p>
             <div class="estrelas">
               <a>9,7</a>
